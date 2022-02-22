@@ -37,7 +37,7 @@ export function GithubIssueSearchResult(props: Props) {
   }, [issueDocument.user]);
 
   return (
-    <ListItem>
+    <ListItem button component={'a'} href={issueDocument.location}>
       <ListItemAvatar>
         <Avatar src={avatarUrl} />
       </ListItemAvatar>
